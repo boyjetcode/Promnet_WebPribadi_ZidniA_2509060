@@ -1,0 +1,27 @@
+import React, { lazy, Suspense } from 'react';
+import './App.css';
+
+// 🚀 Lazy Load / Chunking untuk tiap komponen
+const Header = lazy(() => import('./components/Header'));
+const Section = lazy(() => import('./components/Section'));
+const Footer = lazy(() => import('./components/Footer'));
+
+function App() {
+  return (
+    <div>
+      <Suspense fallback={<div className="loading-text">Loading Header...</div>}>
+        <Header />
+      </Suspense>
+
+      <Suspense fallback={<div className="loading-text">Loading Section...</div>}>
+        <Section />
+      </Suspense>
+
+      <Suspense fallback={<div className="loading-text">Loading Footer...</div>}>
+        <Footer />
+      </Suspense>
+    </div>
+  );
+}
+
+export default App;
