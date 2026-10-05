@@ -1,7 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="footer-container">
-      <p>&copy; {new Date().getFullYear()} Promnet Chunking - All rights reserved.</p>
+    <footer>
+      <hr />
+      <p>
+        <small>
+          &copy; 2026 Muhammad Zidni An' Umillah Haq. Dibuat pakai React JS dengan kondisi berbunga"(dikit), and i don't know but im Dongker.
+        </small>
+      </p>
     </footer>
   );
 }

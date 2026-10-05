@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
 
-// 🚀 Lazy Load / Chunking untuk tiap komponen
 const Header = lazy(() => import('./components/Header'));
 const Section = lazy(() => import('./components/Section'));
 const Footer = lazy(() => import('./components/Footer'));

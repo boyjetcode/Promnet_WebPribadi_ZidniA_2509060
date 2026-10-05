@@ -1,11 +1,14 @@
 export default function Header() {
   return (
-    <header className="header-container">
-      <h1>Praktikum Promnet - React Chunking</h1>
-      <nav className="header-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-      </nav>
+    <header>
+      <h1>Muhammad Zidni An' Umillah Haq</h1>
+      <p>
+        <strong>
+          Mahasiswa S1 Pendidikan Ilmu Komputer - Universitas Pendidikan Indonesia (UPI)
+        </strong>
+      </p>
+      <p>Pengembang Perangkat Lunak Pemula(banget) | Pejuang Hosting, Music & Fitness Enthusiast </p>
+      <hr />
     </header>
   );
 }
